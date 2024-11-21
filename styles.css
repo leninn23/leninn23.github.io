@@ -37,6 +37,25 @@ main {
 section {
     margin-bottom: 40px;
 }
+section h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaciado inferior para separación */
+}
+
+#projects {
+    margin-bottom: 20px;
+}
+
+#projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    gap: 20px; /* Espaciado entre filas y columnas */
+}
 
 .project {
     display: flex;
@@ -44,20 +63,21 @@ section {
     background: #fff;
     border: 1px solid #ddd;
     padding: 15px;
-    margin: 10px 0;
     border-radius: 5px;
 }
 
 .project img {
-    width: 150px; /* Ajusta el tamaño según lo que prefieras */
+    width: 100px;
     height: auto;
     border-radius: 5px;
-    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    margin-right: 15px;
 }
 
 .project-info {
-    flex: 1; /* Ocupa el resto del espacio */
+    flex: 1;
 }
+
+
 
 form label {
     display: block;
